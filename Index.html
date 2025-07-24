@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Romain Sarengat - BTS SIO SISR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le CSS -->
+</head>
+<body>
+    <header>
+        <h1>Romain Sarengat</h1>
+        <h2>BTS SIO - Spécialité SISR</h2>
+        <div class="tech-bg"></div>
+    </header>
+    <nav>
+        <a href="#competences">Compétences</a>
+        <a href="#projetpro">Projet Pro</a>
+        <a href="#parcourspro">Parcours Pro</a>
+        <a href="#sisr">Spécialisation SISR</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="competences">
+            <h3>Compétences (CV)</h3>
+            <ul>
+                <li>Administration systèmes et réseaux</li>
+                <li>Virtualisation (VMware, Hyper-V)</li>
+                <li>Sécurité informatique</li>
+                <li>Support utilisateurs</li>
+                <li>Programmation (Python, PowerShell)</li>
+                <li>Gestion de projet</li>
+            </ul>
+        </section>
+        <section id="projetpro">
+            <h3>Projet Professionnel</h3>
+            <p>Devenir administrateur systèmes et réseaux dans une grande entreprise ou évoluer vers la cybersécurité.</p>
+        </section>
+        <section id="parcourspro">
+            <h3>Parcours Professionnel</h3>
+            <ul>
+                <li>Stage chez [Nom de l'entreprise] – Technicien support (2024)</li>
+                <li>Alternance chez [Nom de l'entreprise] – Assistant administrateur réseau (2025)</li>
+            </ul>
+        </section>
+        <section id="sisr">
+            <h3>Spécialisation Informatique SISR</h3>
+            <p>Ma formation SISR m’a permis d’acquérir des compétences solides en gestion des infrastructures réseaux et systèmes, sécurité, et virtualisation.</p>
+        </section>
+        <section id="contact">
+            <h3>Contact</h3>
+            <p><strong>Nom :</strong> Romain Sarengat</p>
+            <p><strong>Email :</strong> romain.sarengat@gmail.com</p>
+            <p><strong>Téléphone :</strong> 51.68.93</p>
+        </section>
+    </main>
+    <footer>    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+        color: #fff;
+        background: linear-gradient(120deg, #0f2027 0%, #2c5364 40%, #00d2ff 100%);
+        background-size: 200% 200%;
+        animation: holo-bg 8s ease-in-out infinite;
+        position: relative;
+        overflow-x: hidden;
+    }
+    
+    @keyframes holo-bg {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        pointer-events: none;
+        background: repeating-linear-gradient(
+            120deg,
+            rgba(0,210,255,0.08) 0px,
+            rgba(0,210,255,0.08) 2px,
+            transparent 2px,
+            transparent 24px
+        );
+        z-index: 0;
+        mix-blend-mode: lighten;
+    }
+    
+    .tech-bg {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: url('https://www.transparenttextures.com/patterns/cubes.png');
+        opacity: 0.08;
+        z-index: 1;
+    }
+    
+    header {
+        text-align: center;
+        padding: 2rem 1rem 1rem 1rem;
+        position: relative;
+        z-index: 2;
+    }
+    
+    header h1, header h2 {
+        position: relative;
+        z-index: 2;
+        text-shadow: 0 0 8px #00d2ff88, 0 0 2px #fff;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        background: rgba(44, 83, 100, 0.8);
+        padding: 1rem 0;
+        z-index: 2;
+        position: relative;
+        box-shadow: 0 2px 12px #00d2ff22;
+    }
+    
+    nav a {
+        color: #00d2ff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.2s, text-shadow 0.2s;
+        text-shadow: 0 0 6px #00d2ff44;
+        letter-spacing: 1px;
+    }
+    
+    nav a:hover {
+        color: #fff;
+        text-shadow: 0 0 12px #00d2ff, 0 0 2px #fff;
+    }
+    
+    main {
+        max-width: 900px;
+        margin: 2rem auto;
+        background: rgba(32, 58, 67, 0.85);
+        border-radius: 12px;
+        box-shadow: 0 4px 24px #0008;
+        padding: 2rem;
+        position: relative;
+        z-index: 2;
+    }
+    
+    section {
+        margin-bottom: 2rem;
+    }
+    
+    h3 {
+        color: #00d2ff;
+        border-bottom: 2px solid #00d2ff;
+        padding-bottom: 0.5rem;
+        text-shadow: 0 0 8px #00d2ff88;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    input, textarea {
+        border: none;
+        border-radius: 4px;
+        padding: 0.5rem;
+        font-size: 1rem;
+        background: rgba(0,210,255,0.08);
+        color: #fff;
+        box-shadow: 0 0 8px #00d2ff22 inset;
+        outline: none;
+        transition: box-shadow 0.2s;
+    }
+    
+    input:focus, textarea:focus {
+        box-shadow: 0 0 12px #00d2ff88;
+        background: rgba(0,210,255,0.15);
+    }
+    
+    button {
+        background: linear-gradient(90deg, #00d2ff 0%, #2c5364 100%);
+        color: #203a43;
+        border: none;
+        border-radius: 4px;
+        padding: 0.7rem;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 0.5rem;
+        box-shadow: 0 0 8px #00d2ff44;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    }
+    
+    button:hover {
+        background: #fff;
+        color: #00d2ff;
+        box-shadow: 0 0 16px #00d2ff;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background: rgba(44, 83, 100, 0.8);
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        position: relative;
+        z-index: 2;
+    }
+        <p>&copy; 2025 Romain Sarengat - BTS SIO SISR</p>
+    </footer>
+</body>
+</html>
